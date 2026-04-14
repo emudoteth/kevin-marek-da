@@ -119,6 +119,9 @@
     .contact-btn-secondary:hover { background: var(--forest); color: white; }
 
     footer { background: #010f0e; padding: 1.5rem 2rem; text-align: center; font-size: 0.75rem; color: rgba(255,255,255,0.3); }
+    .built-badge { display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 0.6rem; background: rgba(126,207,28,0.08); border: 1px solid rgba(126,207,28,0.2); border-radius: 20px; padding: 0.3rem 0.85rem; font-size: 0.72rem; color: rgba(255,255,255,0.5); }
+    .built-badge a { color: var(--lime); text-decoration: none; font-weight: 700; }
+    .built-badge a:hover { text-decoration: underline; }
 
     @media (max-width: 768px) {
       .nav-links { display: none; }
@@ -391,6 +394,9 @@
 
 <footer>
   Built for the Huntington Digital Assets Product Manager opportunity · Kevin Marek · 2026
+  <div class="built-badge">
+    🤖 Built with <a href="https://openclaw.ai" target="_blank">OpenClaw</a> via Telegram &nbsp;·&nbsp; <a href="https://anthropic.com" target="_blank">Claude Sonnet 4.6</a> by Anthropic
+  </div>
 </footer>
 
 </body>
