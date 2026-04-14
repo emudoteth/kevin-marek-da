@@ -4,12 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kevin Marek — Digital Assets Product Manager · Huntington</title>
-  <meta name="description" content="Kevin Marek — Three years inside the world's largest Web3 ecosystem. Now bringing that depth to Huntington's Digital Assets strategy.">
+  <meta name="description" content="Kevin Marek — Hands-on blockchain product leader with experience shipping real digital asset products inside the world's largest Web3 ecosystem.">
   <meta name="robots" content="noindex">
   <link rel="icon" href="kevin.jpg">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     :root {
       --forest: #012D2A;
       --green: #214846;
@@ -17,22 +16,14 @@
       --lime-light: #96E030;
       --slate: #3d5450;
       --light: #f0faf7;
-      --mint: #B8EFE4;
       --white: #ffffff;
       --border: #c8ddd9;
     }
-
     html { scroll-behavior: smooth; }
     body { font-family: Arial, 'Helvetica Neue', sans-serif; background: var(--white); color: #1a202c; line-height: 1.65; font-size: 16px; }
 
-    /* ── NAV ── */
-    nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-      background: rgba(1,45,42,0.97); backdrop-filter: blur(8px);
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 0 2rem; height: 60px;
-      border-bottom: 1px solid rgba(126,207,28,0.3);
-    }
+    /* NAV */
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(1,45,42,0.97); backdrop-filter: blur(8px); display: flex; align-items: center; justify-content: space-between; padding: 0 2rem; height: 60px; border-bottom: 1px solid rgba(126,207,28,0.3); }
     .nav-brand { display: flex; align-items: center; gap: 0.65rem; }
     .nav-avatar { width: 36px; height: 36px; border-radius: 50%; overflow: hidden; border: 2px solid rgba(126,207,28,0.6); flex-shrink: 0; }
     .nav-avatar img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
@@ -41,39 +32,23 @@
     .nav-links { display: flex; gap: 1.5rem; align-items: center; }
     .nav-links a { font-size: 0.8rem; color: rgba(255,255,255,0.7); text-decoration: none; letter-spacing: 0.04em; text-transform: uppercase; transition: color 0.15s; }
     .nav-links a:hover { color: var(--lime); }
-    .nav-cta { font-size: 0.78rem; font-weight: 700; background: var(--lime); color: var(--forest) !important; padding: 0.4rem 1rem; border-radius: 6px; letter-spacing: 0.04em; text-transform: uppercase; transition: background 0.15s !important; }
+    .nav-cta { font-size: 0.78rem; font-weight: 700; background: var(--lime); color: var(--forest) !important; padding: 0.4rem 1rem; border-radius: 6px; letter-spacing: 0.04em; text-transform: uppercase; }
     .nav-cta:hover { background: var(--lime-light) !important; }
 
-    /* ── HERO ── */
-    .hero {
-      background: linear-gradient(145deg, #011e1c 0%, #012D2A 50%, #0a3530 100%);
-      padding: 120px 2rem 100px; text-align: center; position: relative; overflow: hidden;
-    }
-    .hero::before {
-      content: ''; position: absolute; inset: 0;
-      background: radial-gradient(ellipse at 55% 35%, rgba(126,207,28,0.07) 0%, transparent 65%);
-    }
-    .hero-portrait {
-      width: 120px; height: 120px; border-radius: 50%; overflow: hidden;
-      border: 3px solid rgba(126,207,28,0.6);
-      box-shadow: 0 0 0 6px rgba(126,207,28,0.1), 0 8px 32px rgba(0,0,0,0.4);
-      margin: 0 auto 1.75rem; position: relative; z-index: 1;
-    }
+    /* HERO */
+    .hero { background: linear-gradient(145deg, #011e1c 0%, #012D2A 50%, #0a3530 100%); padding: 120px 2rem 100px; text-align: center; position: relative; overflow: hidden; }
+    .hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 55% 35%, rgba(126,207,28,0.07) 0%, transparent 65%); }
+    .hero-portrait { width: 120px; height: 120px; border-radius: 50%; overflow: hidden; border: 3px solid rgba(126,207,28,0.6); box-shadow: 0 0 0 6px rgba(126,207,28,0.1), 0 8px 32px rgba(0,0,0,0.4); margin: 0 auto 1.75rem; position: relative; z-index: 1; }
     .hero-portrait img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
     .hero-eyebrow { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--lime); margin-bottom: 1.25rem; display: block; position: relative; z-index: 1; }
-    .hero h1 {
-      font-family: Georgia, 'Times New Roman', serif;
-      font-size: clamp(2rem, 4.5vw, 3.5rem);
-      font-weight: 700; color: var(--white); line-height: 1.1;
-      max-width: 860px; margin: 0 auto 1.5rem; letter-spacing: -0.02em; position: relative; z-index: 1;
-    }
+    .hero h1 { font-family: Georgia, 'Times New Roman', serif; font-size: clamp(2rem, 4.5vw, 3.5rem); font-weight: 700; color: var(--white); line-height: 1.1; max-width: 860px; margin: 0 auto 1.5rem; letter-spacing: -0.02em; position: relative; z-index: 1; }
     .hero h1 em { font-style: italic; color: var(--lime-light); }
-    .hero-sub { font-size: clamp(1rem, 2vw, 1.15rem); color: rgba(255,255,255,0.72); max-width: 620px; margin: 0 auto 2.5rem; line-height: 1.75; position: relative; z-index: 1; }
+    .hero-sub { font-size: clamp(1rem, 2vw, 1.15rem); color: rgba(255,255,255,0.72); max-width: 640px; margin: 0 auto 2.5rem; line-height: 1.75; position: relative; z-index: 1; }
     .hero-cta { display: inline-block; background: var(--lime); color: var(--forest); font-weight: 700; font-size: 0.9rem; padding: 0.85rem 2.25rem; border-radius: 8px; text-decoration: none; letter-spacing: 0.04em; transition: background 0.2s, transform 0.15s; position: relative; z-index: 1; }
     .hero-cta:hover { background: var(--lime-light); transform: translateY(-1px); }
     .hero-role { margin-top: 2rem; font-size: 0.82rem; color: rgba(255,255,255,0.4); letter-spacing: 0.06em; text-transform: uppercase; position: relative; z-index: 1; }
 
-    /* ── SHARED ── */
+    /* SHARED */
     section { padding: 80px 2rem; }
     .container { max-width: 1000px; margin: 0 auto; }
     .section-label { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--lime); margin-bottom: 0.75rem; display: block; }
@@ -81,18 +56,17 @@
     .section-intro { font-size: 1.05rem; color: var(--slate); max-width: 680px; line-height: 1.75; margin-bottom: 3rem; }
     .gold-line { width: 48px; height: 3px; background: var(--lime); margin-bottom: 1.5rem; }
 
-    /* ── DIFFERENTIATOR ── */
-    .diff-section { background: var(--forest); }
-    .diff-section .section-title { color: var(--white); }
-    .diff-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1rem; }
-    .diff-card { background: rgba(255,255,255,0.06); border: 1px solid rgba(126,207,28,0.2); border-radius: 12px; padding: 1.75rem; }
-    .diff-card-title { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--lime); margin-bottom: 0.75rem; }
-    .diff-card h3 { font-family: Georgia, serif; font-size: 1.3rem; color: var(--white); margin-bottom: 0.75rem; line-height: 1.25; }
-    .diff-card p { font-size: 0.9rem; color: rgba(255,255,255,0.65); line-height: 1.7; }
-    .diff-card ul { margin-top: 0.75rem; padding-left: 1.1rem; }
-    .diff-card ul li { font-size: 0.88rem; color: rgba(255,255,255,0.65); line-height: 1.65; margin-bottom: 0.3rem; }
+    /* PRODUCTS SHIPPED — the "show don't tell" section */
+    .products-section { background: var(--forest); }
+    .products-section .section-title { color: var(--white); }
+    .products-section .section-intro { color: rgba(255,255,255,0.65); margin-bottom: 2rem; }
+    .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+    .product-card { background: rgba(255,255,255,0.06); border: 1px solid rgba(126,207,28,0.2); border-radius: 10px; padding: 1.25rem; }
+    .product-card-org { font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--lime); margin-bottom: 0.4rem; }
+    .product-card h4 { font-size: 0.92rem; font-weight: 700; color: var(--white); margin-bottom: 0.4rem; line-height: 1.3; }
+    .product-card p { font-size: 0.78rem; color: rgba(255,255,255,0.55); line-height: 1.6; }
 
-    /* ── ALIGNMENT ── */
+    /* ALIGNMENT */
     .alignment-section { background: var(--light); }
     .alignment-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border-radius: 12px; overflow: hidden; border: 1px solid var(--border); box-shadow: 0 4px 24px rgba(0,0,0,0.06); }
     .align-header { padding: 1rem 1.5rem; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
@@ -105,8 +79,8 @@
     .align-cell-kevin strong { color: var(--green); display: block; margin-bottom: 0.2rem; font-size: 0.82rem; }
     .match-badge { display: inline-block; background: #d4f5e2; color: #0a5a30; font-size: 0.68rem; font-weight: 700; padding: 0.15rem 0.5rem; border-radius: 4px; letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 0.4rem; }
 
-    /* ── PROOF ── */
-    .proof-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 1.75rem; }
+    /* PROOF */
+    .proof-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.75rem; }
     .proof-card { background: white; border: 1px solid var(--border); border-radius: 12px; padding: 1.75rem; box-shadow: 0 2px 12px rgba(0,0,0,0.04); transition: box-shadow 0.2s, transform 0.15s; border-top: 4px solid var(--lime); }
     .proof-card:hover { box-shadow: 0 6px 24px rgba(0,0,0,0.1); transform: translateY(-2px); }
     .proof-icon { font-size: 1.5rem; margin-bottom: 1rem; }
@@ -116,7 +90,7 @@
     .proof-tags { margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 0.4rem; }
     .proof-tag { font-size: 0.7rem; background: var(--light); color: var(--green); border: 1px solid var(--border); padding: 0.2rem 0.5rem; border-radius: 4px; font-weight: 600; }
 
-    /* ── FIN SERVICES ── */
+    /* FIN SERVICES */
     .fin-section { background: var(--light); }
     .fin-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
     .fin-copy p { font-size: 0.95rem; color: var(--slate); line-height: 1.75; margin-bottom: 1rem; }
@@ -126,19 +100,19 @@
     .fin-role-title { font-size: 0.85rem; color: var(--slate); margin-bottom: 0.5rem; }
     .fin-role-desc { font-size: 0.82rem; color: var(--slate); line-height: 1.6; }
 
-    /* ── STATEMENT ── */
+    /* STATEMENT */
     .statement-section { background: linear-gradient(135deg, var(--forest), var(--green)); }
     .statement-inner { display: flex; align-items: center; gap: 3rem; max-width: 860px; margin: 0 auto; text-align: left; }
     .statement-photo { flex-shrink: 0; width: 160px; height: 160px; border-radius: 50%; overflow: hidden; border: 3px solid rgba(126,207,28,0.5); box-shadow: 0 0 0 6px rgba(126,207,28,0.1); }
     .statement-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
-    .statement-quote { font-family: Georgia, serif; font-size: clamp(1.1rem, 2vw, 1.5rem); color: var(--white); line-height: 1.65; font-style: italic; margin-bottom: 1rem; }
+    .statement-quote { font-family: Georgia, serif; font-size: clamp(1.1rem, 2vw, 1.45rem); color: var(--white); line-height: 1.65; font-style: italic; margin-bottom: 1rem; }
     .statement-quote em { color: var(--lime-light); font-style: normal; }
     .statement-byline { font-size: 0.82rem; color: rgba(255,255,255,0.5); letter-spacing: 0.06em; text-transform: uppercase; }
 
-    /* ── CONTACT ── */
+    /* CONTACT */
     .contact-section { text-align: center; }
     .contact-links { display: flex; justify-content: center; gap: 1.25rem; flex-wrap: wrap; margin-top: 2rem; }
-    .contact-btn { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.88rem; font-weight: 700; padding: 0.8rem 1.75rem; border-radius: 8px; text-decoration: none; transition: all 0.2s; letter-spacing: 0.02em; }
+    .contact-btn { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.88rem; font-weight: 700; padding: 0.8rem 1.75rem; border-radius: 8px; text-decoration: none; transition: all 0.2s; }
     .contact-btn-primary { background: var(--forest); color: white; }
     .contact-btn-primary:hover { background: var(--green); }
     .contact-btn-secondary { background: transparent; color: var(--forest); border: 2px solid var(--forest); }
@@ -148,10 +122,9 @@
 
     @media (max-width: 768px) {
       .nav-links { display: none; }
-      .diff-grid { grid-template-columns: 1fr; }
+      .products-grid { grid-template-columns: 1fr 1fr; }
       .alignment-grid { grid-template-columns: 1fr; }
-      .align-header-role { display: none; }
-      .align-cell-need { display: none; }
+      .align-header-role, .align-cell-need { display: none; }
       .align-cell-kevin { background: white; }
       .fin-grid { grid-template-columns: 1fr; }
       section { padding: 60px 1.25rem; }
@@ -167,9 +140,9 @@
     <div class="nav-name">Kevin <span>Marek</span></div>
   </div>
   <div class="nav-links">
+    <a href="#products">Products Built</a>
     <a href="#match">The Match</a>
     <a href="#proof">Experience</a>
-    <a href="#financial">Fin Services</a>
     <a href="#contact">Contact</a>
     <a href="mailto:kdm5126@gmail.com" class="nav-cta">Get in Touch</a>
   </div>
@@ -179,37 +152,48 @@
 <div class="hero">
   <div class="hero-portrait"><img src="kevin.jpg" alt="Kevin Marek"></div>
   <span class="hero-eyebrow">Applying for: Digital Assets Product Manager · Huntington</span>
-  <h1>Digital assets aren't<br>where I'm <em>heading</em>.<br>They're where<br>I've <em>been</em>.</h1>
-  <p class="hero-sub">I've spent three years operating inside the world's largest Web3 ecosystem — building products, shaping strategy, and translating blockchain into business outcomes. Huntington's digital assets future is exactly where that experience belongs.</p>
-  <a href="#match" class="hero-cta">See how it maps →</a>
-  <div class="hero-role">Kevin Marek &nbsp;·&nbsp; Digital Assets · Blockchain · Product Strategy</div>
+  <h1>I haven't studied<br>digital assets from the outside.<br>I've been <em>building them</em><br>from the inside.</h1>
+  <p class="hero-sub">Real products shipped on real blockchain rails — consumer onboarding at scale, on-chain payment tools, stablecoin distribution, tokenized access platforms. Combined with a financial services foundation that understands what it takes to operate inside a regulated bank.</p>
+  <a href="#products" class="hero-cta">See what I've built →</a>
+  <div class="hero-role">Kevin Marek &nbsp;·&nbsp; Digital Assets · Blockchain Product · Financial Technology</div>
 </div>
 
-<!-- DIFFERENTIATOR -->
-<section class="diff-section">
+<!-- PRODUCTS SHIPPED -->
+<section class="products-section" id="products">
   <div class="container">
-    <span class="section-label" style="color: var(--lime-light);">Why I'm Different</span>
-    <h2 class="section-title" style="color: var(--white);">Most candidates know blockchain from the outside.<br>I've been building from inside it.</h2>
-    <div class="diff-grid">
-      <div class="diff-card">
-        <div class="diff-card-title">Blockchain Depth</div>
-        <h3>Three years at the center of the Web3 world</h3>
-        <p>As Lead Technology Steward at ETHDenver — the world's largest Web3 event — I've worked daily with blockchain infrastructure, crypto protocols, developer tooling, and the ecosystem of builders shaping the future of digital assets. This isn't surface knowledge.</p>
-        <ul>
-          <li>Deep familiarity with crypto custody, blockchain-based payments, and stablecoin infrastructure</li>
-          <li>Product leadership on blockchain coordination tools at Gitcoin</li>
-          <li>Core team member in a 1,300+ member global Ethereum builder community</li>
-        </ul>
+    <span class="section-label" style="color: var(--lime-light);">Products I've Shipped</span>
+    <h2 class="section-title">Not adjacent experience. Actual products built on blockchain rails.</h2>
+    <p class="section-intro">These are the products I've built, launched, or led — not categories I'm familiar with. Each one maps directly to what Huntington is building in digital assets.</p>
+    <div class="products-grid">
+      <div class="product-card">
+        <div class="product-card-org">ETHDenver</div>
+        <h4>Camp BUIDL</h4>
+        <p>Annually rebuilt technical training product moving participants from zero to blockchain-ready. Owned requirements, curriculum, staffing, and KPIs including adoption and completion metrics.</p>
       </div>
-      <div class="diff-card">
-        <div class="diff-card-title">Financial Services Credibility</div>
-        <h3>I understand what it means to operate in a bank</h3>
-        <p>Blockchain expertise alone isn't enough in a regulated enterprise. My background includes direct experience in financial services — the compliance culture, the risk frameworks, the institutional decision-making that shapes how a bank like Huntington can move in emerging technology.</p>
-        <ul>
-          <li>Personal Banker II at Wells Fargo — regulated enterprise at scale</li>
-          <li>Financial Advisor at McAdam Financial (SEC-registered RIA)</li>
-          <li>Firsthand fluency in risk, compliance, and institutional client relationships</li>
-        </ul>
+      <div class="product-card">
+        <div class="product-card-org">Build Guid</div>
+        <h4>SpeedRunEthereum.com</h4>
+        <p>Live consumer product onboarding thousands of developers onto blockchain rails through progressive Ethereum challenges. Contributed to product strategy, roadmap, and adoption metrics at global scale.</p>
+      </div>
+      <div class="product-card">
+        <div class="product-card-org">Build Guid</div>
+        <h4>Cohort Streams</h4>
+        <p>On-chain grants and contributor development product. Managed the full participant lifecycle from application through completion and funding disbursement across a global contributor base.</p>
+      </div>
+      <div class="product-card">
+        <div class="product-card-org">Gitcoin / Moonshot</div>
+        <h4>Quadratic Diplomacy</h4>
+        <p>On-chain democratic budget distribution product. Led product development including requirements, development cycles, and pilot launch within the world's leading blockchain grants platform ($60M+ distributed).</p>
+      </div>
+      <div class="product-card">
+        <div class="product-card-org">Gitcoin / Moonshot</div>
+        <h4>Tip.Party</h4>
+        <p>On-chain event payment product. Led end-to-end product development — requirements, development cycles, and launch — gaining firsthand expertise in on-chain payment mechanics and stablecoin flows.</p>
+      </div>
+      <div class="product-card">
+        <div class="product-card-org">Unlock Protocol</div>
+        <h4>Headline</h4>
+        <p>Consumer-facing content platform built on tokenized access rails. Managed product requirements, go-to-market timelines, and partner integrations from zero to live on crypto and stablecoin payment infrastructure.</p>
       </div>
     </div>
   </div>
@@ -219,71 +203,71 @@
 <section class="alignment-section" id="match">
   <div class="container">
     <span class="section-label">The Match</span>
-    <h2 class="section-title">What the role requires.<br>What I bring.</h2>
-    <p class="section-intro">Huntington needs a product manager who lives at the intersection of blockchain, financial services, and enterprise strategy. Here's the proof that intersection is where I've been operating.</p>
+    <h2 class="section-title">What the role requires.<br>What I bring to it.</h2>
+    <p class="section-intro">Every core requirement in this job description maps directly to something I've already done. Here's the side-by-side.</p>
 
     <div class="alignment-grid">
       <div class="align-header align-header-role">The role requires…</div>
       <div class="align-header align-header-kevin">What I bring…</div>
 
       <div class="align-cell align-cell-need">
-        <strong>5+ years in digital assets, crypto, or blockchain product management</strong>
-        Experience building and evolving digital asset products with measurable business impact.
+        <strong>Execute digital assets product strategy — crypto custody, blockchain-based payments, stablecoin integration</strong>
+        Collaborate with cross-functional teams to build and evolve digital asset products at enterprise scale.
       </div>
       <div class="align-cell align-cell-kevin">
-        <span class="match-badge">✓ Direct match</span>
-        <strong>ETHDenver + Gitcoin + Build Guid (2021–Present)</strong>
-        Five years working inside the blockchain/Web3 ecosystem — leading product development on coordination tools, shaping strategy for multi-million dollar digital asset events, and contributing to the core teams building Ethereum-native products.
+        <span class="match-badge">✓ Hands-on match</span>
+        <strong>Gitcoin + Unlock Protocol + Build Guid</strong>
+        I've built on-chain payment products (Tip.Party), stablecoin-based funding infrastructure (inside Gitcoin's $60M+ distribution platform), and tokenized access rails (Headline). These aren't concepts — they're products I shipped.
       </div>
 
       <div class="align-cell align-cell-need">
-        <strong>Knowledge of blockchain, crypto custody, stablecoins, and customer-centric digital platforms</strong>
-        Not just conceptual — operational knowledge of how these technologies work in practice.
-      </div>
-      <div class="align-cell align-cell-kevin">
-        <span class="match-badge">✓ Practitioner-level</span>
-        <strong>ETHDenver — Lead Technology Steward</strong>
-        I work daily with blockchain infrastructure, crypto protocols, developer tooling, and the organizations building crypto custody and stablecoin solutions. This is the community I've been embedded in for three years.
-      </div>
-
-      <div class="align-cell align-cell-need">
-        <strong>Create detailed business cases and financial analysis for digital asset opportunities</strong>
-        Robust financial modeling, clear value propositions, initiative-level ROI.
+        <strong>Provide financial analysis and build detailed business cases for digital asset opportunities</strong>
+        Robust financial modeling, clear value propositions, formal budget approval processes.
       </div>
       <div class="align-cell align-cell-kevin">
         <span class="match-badge">✓ Direct match</span>
         <strong>Gitcoin + C.H. Robinson</strong>
-        I've developed budget proposals, strategic narratives, and decision-oriented financial analyses for leadership at both blockchain-native organizations and one of the world's largest enterprise logistics companies. I build business cases that move senior leaders to act.
-      </div>
-
-      <div class="align-cell align-cell-need">
-        <strong>Collaborate across enterprise lines of business, risk, compliance, and data teams</strong>
-        Navigate a large, complex, regulated organization to drive alignment and execution.
-      </div>
-      <div class="align-cell align-cell-kevin">
-        <span class="match-badge">✓ Direct match</span>
-        <strong>Wells Fargo + ETHDenver + C.H. Robinson</strong>
-        I've operated in a highly regulated financial services enterprise, coordinated across a globally distributed stakeholder ecosystem, and aligned cross-functional teams at one of the world's largest logistics companies. Cross-functional navigation in complex organizations is core to how I work.
-      </div>
-
-      <div class="align-cell align-cell-need">
-        <strong>Communicate digital asset business impact to stakeholders and executive leadership</strong>
-        Translate complex technical and strategic content into clear, executive-ready messaging.
-      </div>
-      <div class="align-cell align-cell-kevin">
-        <span class="match-badge">✓ Core competency</span>
-        <strong>ETHDenver + Gitcoin</strong>
-        I've spent years translating blockchain infrastructure, crypto protocols, and digital asset strategy into clear communications for non-technical executive audiences. It's not something I do occasionally — it's the work I show up to do every day.
+        I built business cases and funding proposals securing organizational alignment and budget approval through formal governance at Gitcoin. At C.H. Robinson I developed strategic forecasts and decision-oriented planning materials at enterprise scale.
       </div>
 
       <div class="align-cell align-cell-need">
         <strong>Monitor KPIs — adoption, retention, transaction volume, digital asset revenue</strong>
-        Data-driven product management with measurable outcomes.
+        Data-driven product decisions tracked against measurable outcomes.
       </div>
       <div class="align-cell align-cell-kevin">
         <span class="match-badge">✓ Direct match</span>
-        <strong>ETHDenver + C.H. Robinson</strong>
-        I track ecosystem metrics, sponsor performance, and adoption signals at ETHDenver across a multi-million dollar operating budget. At C.H. Robinson I conducted market analysis and competitive intelligence that directly shaped capacity strategy at enterprise scale.
+        <strong>ETHDenver + Build Guid</strong>
+        I've tracked and reported KPIs across program performance, participant adoption, and engagement at ETHDenver's multi-million dollar operating scale. At Build Guid I monitored adoption and engagement metrics across SpeedRunEthereum.com to inform product priorities and roadmap decisions.
+      </div>
+
+      <div class="align-cell align-cell-need">
+        <strong>Stay current on digital asset trends, regulatory developments, and customer expectations</strong>
+        Translate ecosystem intelligence into product direction.
+      </div>
+      <div class="align-cell align-cell-kevin">
+        <span class="match-badge">✓ Core strength</span>
+        <strong>ETHDenver — World's Largest Web3 Event</strong>
+        I stay continuously current on digital asset trends, regulatory developments, and ecosystem shifts — it's a core responsibility of my role at one of the most influential events in blockchain. I synthesize that intelligence into organizational strategy and product direction.
+      </div>
+
+      <div class="align-cell align-cell-need">
+        <strong>Foster collaboration with enterprise data, risk, and compliance teams</strong>
+        Navigate regulatory and compliance considerations in digital asset distribution.
+      </div>
+      <div class="align-cell align-cell-kevin">
+        <span class="match-badge">✓ Direct match</span>
+        <strong>Gitcoin + Wells Fargo</strong>
+        I developed firsthand expertise in stablecoin flows, on-chain payment mechanics, and the compliance and risk considerations of digital asset distribution at Gitcoin. My Wells Fargo background means I understand institutional risk management and how compliance frameworks shape product decisions in a regulated environment.
+      </div>
+
+      <div class="align-cell align-cell-need">
+        <strong>Communicate digital asset business impact to stakeholders and executive leadership</strong>
+        Clear, structured stakeholder reporting that drives decisions at the executive level.
+      </div>
+      <div class="align-cell align-cell-kevin">
+        <span class="match-badge">✓ Core competency</span>
+        <strong>ETHDenver + Gitcoin</strong>
+        I communicate the business impact of digital asset initiatives to sponsors, partners, and executive leadership through clear, structured stakeholder reporting. I've synthesized digital asset ecosystem trends, competitor positioning, and regulatory signals to inform executive-level decision-making across multiple organizations.
       </div>
     </div>
   </div>
@@ -292,50 +276,50 @@
 <!-- PROOF POINTS -->
 <section id="proof">
   <div class="container">
-    <span class="section-label">Experience That Proves It</span>
-    <h2 class="section-title">Where I've actually done this work.</h2>
-    <p class="section-intro">Not adjacent experience dressed up for a blockchain role. Real work, inside the blockchain ecosystem, at scale, with accountability to senior stakeholders.</p>
+    <span class="section-label">Experience in Depth</span>
+    <h2 class="section-title">Where this experience was built.</h2>
+    <p class="section-intro">Four roles that go deep on digital assets, blockchain product development, and the financial services foundation that makes it applicable inside a bank.</p>
     <div class="proof-grid">
 
       <div class="proof-card">
         <div class="proof-icon">⛓️</div>
         <div class="proof-org">ETHDenver · 2022–Present</div>
-        <h3>Inside the World's Largest Web3 Ecosystem</h3>
-        <p>As Lead Technology Steward for ETHDenver — the world's largest Web3 event with a multi-million dollar annual budget — I'm embedded in the global community building the future of digital assets. I work daily with the teams building crypto custody solutions, stablecoin protocols, blockchain payments infrastructure, and Ethereum developer tooling. I translate this rapidly evolving landscape into clear strategy and executive-ready communications for organizational leadership. I also build and deploy AI-powered automation workflows that keep operations running at the speed the ecosystem demands.</p>
+        <h3>Product Leadership at the Center of Global Blockchain</h3>
+        <p>As Lead Technology Steward for the world's largest Web3 event, I manage Camp BUIDL as an annually rebuilt product — defining requirements, curriculum, staffing, and operational systems with adoption and completion KPIs. I track and report program performance metrics to inform product iteration and executive communications. I stay continuously current on digital asset trends and regulatory developments, translating ecosystem intelligence into organizational strategy for one of blockchain's most influential platforms. I also build and deploy AI-powered automation workflows to support scalable product delivery.</p>
         <div class="proof-tags">
-          <span class="proof-tag">Blockchain Infrastructure</span>
-          <span class="proof-tag">Crypto Protocols</span>
-          <span class="proof-tag">Stablecoins</span>
+          <span class="proof-tag">Product Management</span>
+          <span class="proof-tag">KPI Tracking</span>
+          <span class="proof-tag">Blockchain Ecosystem</span>
+          <span class="proof-tag">Regulatory Intelligence</span>
           <span class="proof-tag">AI Automation</span>
-          <span class="proof-tag">Ecosystem Strategy</span>
-          <span class="proof-tag">Executive Communications</span>
         </div>
       </div>
 
       <div class="proof-card">
         <div class="proof-icon">🛠️</div>
         <div class="proof-org">Gitcoin / Moonshot Collective · 2021–2022</div>
-        <h3>Blockchain Product Management — Practitioner Level</h3>
-        <p>As Workstream Lead for Prototyping & Coordination Tools at Gitcoin — one of the world's leading blockchain-based public goods funding platforms — I led the product development of on-chain coordination tools from problem identification through design, prototyping, and implementation. I worked at the executive team level, contributing to north star strategy, developing funding proposals, and synthesizing inputs across product, engineering, and ecosystem into clear direction frameworks. This is blockchain product management — not a simulation of it.</p>
+        <h3>On-Chain Payments, Stablecoins & Product Governance</h3>
+        <p>Inside GitcoinDAO — which has distributed over $60M in crypto and stablecoin-based funding globally — I led product development for Quadratic Diplomacy (on-chain budget distribution) and Tip.Party (on-chain event payments), managing requirements, development cycles, and pilot launches. I developed firsthand expertise in stablecoin flows, on-chain payment mechanics, and the compliance and risk considerations of digital asset distribution. I built business cases and funding proposals securing budget approval through formal governance processes, and synthesized regulatory signals to inform executive-level strategy.</p>
         <div class="proof-tags">
-          <span class="proof-tag">On-Chain Product Development</span>
-          <span class="proof-tag">Blockchain Coordination Tools</span>
-          <span class="proof-tag">Executive Strategy</span>
-          <span class="proof-tag">Funding & Business Cases</span>
-          <span class="proof-tag">Cross-Functional Leadership</span>
+          <span class="proof-tag">Stablecoin Distribution ($60M+)</span>
+          <span class="proof-tag">On-Chain Payments</span>
+          <span class="proof-tag">DeFi Protocols</span>
+          <span class="proof-tag">Compliance & Risk</span>
+          <span class="proof-tag">Business Cases</span>
         </div>
       </div>
 
       <div class="proof-card">
-        <div class="proof-icon">🌐</div>
-        <div class="proof-org">Build Guid · 2022–2023</div>
-        <h3>Core Team in the Global Ethereum Builder Community</h3>
-        <p>As a core team member of Build Guid — a 1,300+ member global Ethereum builder community — I shaped organizational strategy and roadmap priorities for a community at the leading edge of blockchain product development. I developed executive-ready narratives translating technical program outcomes into strategic context, and maintained deep relationships across the Ethereum ecosystem of builders, protocols, and infrastructure providers. This is where I stay connected to what's actually being built.</p>
+        <div class="proof-icon">🚀</div>
+        <div class="proof-org">Build Guid + Unlock Protocol · 2020–2023</div>
+        <h3>Consumer Products on Blockchain Rails</h3>
+        <p>At Build Guid I contributed to SpeedRunEthereum.com — a live consumer product onboarding thousands of developers onto blockchain — including product strategy, adoption metrics, and the full lifecycle of Cohort Streams, the platform's on-chain grants product. At Unlock Protocol I developed and launched Headline, a consumer-facing content platform built on tokenized access rails and stablecoin payments, managing product requirements and partner integrations from zero to live. This is consumer-facing digital asset product delivery at scale.</p>
         <div class="proof-tags">
-          <span class="proof-tag">Ethereum Ecosystem</span>
-          <span class="proof-tag">Product Roadmap</span>
-          <span class="proof-tag">Community Strategy</span>
-          <span class="proof-tag">Blockchain Relationships</span>
+          <span class="proof-tag">Consumer Blockchain Products</span>
+          <span class="proof-tag">Tokenized Access</span>
+          <span class="proof-tag">On-Chain Grants</span>
+          <span class="proof-tag">Go-to-Market</span>
+          <span class="proof-tag">Adoption Metrics</span>
         </div>
       </div>
 
@@ -351,20 +335,20 @@
     <div class="gold-line"></div>
     <div class="fin-grid">
       <div class="fin-copy">
-        <p>Most blockchain candidates have never worked in a regulated financial institution. I have. That's the difference between someone who understands digital assets conceptually and someone who can actually execute inside a bank's risk and compliance environment.</p>
-        <p>I know how banks evaluate risk. I know what institutional clients expect. I know how compliance frameworks shape product decisions. And I know how to navigate a large financial services organization to get things done.</p>
-        <p>That combination — blockchain depth <strong>plus</strong> financial services credibility — is rare. It's what makes this role a natural fit rather than a stretch.</p>
+        <p>Most candidates for a digital assets role at a bank have blockchain experience or financial services experience. Rarely both. I have both — and I understand why the combination matters.</p>
+        <p>I know how banks evaluate risk. I know what compliance frameworks look like from the inside. I know how institutional clients think about financial product delivery. And I know how to navigate a large, regulated organization to get things built and approved.</p>
+        <p>That foundation means I can do the blockchain product work <strong>and</strong> operate effectively inside the institutional environment that surrounds it. That's not something most blockchain PMs can claim on day one.</p>
       </div>
       <div class="fin-roles">
         <div class="fin-role">
           <div class="fin-role-co">Wells Fargo Advisors</div>
           <div class="fin-role-title">Personal Banker II · Private Wealth & Financial Services</div>
-          <div class="fin-role-desc">Developed deep fluency in a highly regulated enterprise financial environment — compliance frameworks, institutional risk management, and client-facing communications at scale. Recognized with Trendsetter and Affluent Excellence awards for performance.</div>
+          <div class="fin-role-desc">Developed deep fluency in a highly regulated enterprise financial environment — navigating compliance frameworks, institutional risk management, and client-facing financial product delivery. Served as cross-functional liaison across risk, compliance, and operations. Recognized with Affluent Trendsetter and Affluent Excellence awards.</div>
         </div>
         <div class="fin-role">
           <div class="fin-role-co">McAdam Financial</div>
-          <div class="fin-role-title">Financial Advisor & Team Lead · SEC-Registered Investment Advisory</div>
-          <div class="fin-role-desc">Conducted strategic analysis on emerging digital investment platforms including RoboAdvisors, leading directly to firm adoption of new technology capabilities. This is where my interest in digital assets and financial technology intersected for the first time.</div>
+          <div class="fin-role-title">Financial Advisor & Team Lead · SEC-Registered RIA</div>
+          <div class="fin-role-desc">Conducted strategic analysis on emerging digital investment platforms and RoboAdvisors, leading directly to firm adoption of new technology capabilities. This is where my interest in digital assets and regulated financial technology first intersected — and it's been the thread running through my career ever since.</div>
         </div>
       </div>
     </div>
@@ -378,7 +362,7 @@
       <div class="statement-photo"><img src="kevin.jpg" alt="Kevin Marek"></div>
       <div>
         <div class="statement-quote">
-          "I've spent the last three years embedded in the global blockchain ecosystem — watching digital assets evolve from niche to necessary. At Huntington, I'd bring that depth to a team that's positioning one of America's leading banks to lead this transition. The blockchain knowledge, the financial services background, and the ability to communicate both clearly to executive leadership — I'm not building that skillset. <em>I already have it.</em>"
+          "I've spent years building real products on real blockchain rails — consumer onboarding tools, on-chain payment products, stablecoin distribution infrastructure, tokenized access platforms. That experience, combined with a foundation in regulated financial services, is exactly what Huntington needs to execute its digital assets strategy. I'm not learning this space. <em>I'm already operating in it.</em>"
         </div>
         <div class="statement-byline">— Kevin Marek</div>
       </div>
@@ -390,8 +374,8 @@
 <section class="contact-section" id="contact">
   <div class="container">
     <span class="section-label">Let's Talk</span>
-    <h2 class="section-title">Ready to go deeper.</h2>
-    <p class="section-intro" style="margin: 0 auto;">The best conversations about digital assets start with people who've actually been in the space. I'm ready when you are.</p>
+    <h2 class="section-title">Ready to go deeper on any of this.</h2>
+    <p class="section-intro" style="margin: 0 auto;">The best conversations about digital assets start with people who've built in the space. I'm ready when you are.</p>
     <div class="contact-links">
       <a href="mailto:kdm5126@gmail.com" class="contact-btn contact-btn-primary">📧 kdm5126@gmail.com</a>
       <a href="tel:5709778092" class="contact-btn contact-btn-secondary">📞 (570) 977-8092</a>
