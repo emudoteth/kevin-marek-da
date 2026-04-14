@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kevin Marek — Resume</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Arial, 'Helvetica Neue', sans-serif;
+      font-size: 10.5pt;
+      color: #111;
+      background: #f5f5f5;
+      padding: 2rem;
+    }
+
+    .page {
+      background: white;
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 2.5rem 2.75rem;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    }
+
+    /* Print button — hidden when printing */
+    .print-bar {
+      max-width: 780px; margin: 0 auto 1rem;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .print-btn {
+      background: #012D2A; color: white; border: none;
+      padding: 0.55rem 1.4rem; border-radius: 6px; font-size: 0.85rem;
+      font-weight: 700; cursor: pointer; letter-spacing: 0.03em;
+      text-decoration: none; display: inline-block;
+    }
+    .print-btn:hover { background: #214846; }
+    .back-link { font-size: 0.85rem; color: #012D2A; text-decoration: none; }
+    .back-link:hover { text-decoration: underline; }
+
+    /* Header */
+    .resume-header { text-align: center; margin-bottom: 1.25rem; padding-bottom: 1rem; border-bottom: 2px solid #012D2A; }
+    .resume-name { font-size: 22pt; font-weight: 700; color: #012D2A; letter-spacing: -0.01em; margin-bottom: 0.3rem; }
+    .resume-contact { font-size: 9.5pt; color: #444; }
+    .resume-contact a { color: #012D2A; text-decoration: none; }
+
+    /* Sections */
+    .section { margin-bottom: 1.1rem; }
+    .section-heading {
+      font-size: 9pt; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.1em; color: #012D2A;
+      border-bottom: 1.5px solid #7ECF1C;
+      padding-bottom: 0.2rem; margin-bottom: 0.65rem;
+    }
+
+    /* Summary */
+    .summary-text { font-size: 9.5pt; color: #222; line-height: 1.6; }
+
+    /* Experience */
+    .job { margin-bottom: 0.9rem; }
+    .job:last-child { margin-bottom: 0; }
+    .job-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.25rem; }
+    .job-title-co { font-weight: 700; font-size: 10.5pt; color: #012D2A; }
+    .job-dates { font-size: 9pt; color: #555; white-space: nowrap; }
+    .job-sub { font-size: 9pt; color: #444; font-style: italic; margin-bottom: 0.35rem; margin-top: 0.1rem; }
+    .job-role {
+      font-size: 9.5pt; font-weight: 700; color: #214846;
+      margin-top: 0.4rem; margin-bottom: 0.2rem;
+    }
+    .job-role-sub { font-size: 8.5pt; color: #555; font-style: italic; margin-bottom: 0.3rem; }
+    ul.bullets { padding-left: 1.1rem; }
+    ul.bullets li { font-size: 9.5pt; color: #222; line-height: 1.55; margin-bottom: 0.2rem; }
+
+    /* Education */
+    .edu-name { font-weight: 700; font-size: 10pt; color: #012D2A; }
+    .edu-detail { font-size: 9pt; color: #444; }
+
+    /* Competencies */
+    .competencies { font-size: 9.5pt; color: #222; line-height: 1.7; }
+
+    /* Print styles */
+    @media print {
+      body { background: white; padding: 0; font-size: 10pt; }
+      .page { box-shadow: none; padding: 1.5rem 1.75rem; max-width: 100%; }
+      .print-bar { display: none; }
+    }
+    @page { margin: 0.6in; }
+  </style>
+</head>
+<body>
+
+<div class="print-bar">
+  <a href="index.html" class="back-link">← Back to application site</a>
+  <button class="print-btn" onclick="window.print()">⬇ Print / Save as PDF</button>
+</div>
+
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="resume-header">
+    <div class="resume-name">Kevin Marek</div>
+    <div class="resume-contact">
+      <a href="mailto:KDM5126@gmail.com">KDM5126@gmail.com</a> &nbsp;|&nbsp; (570) 977-8092
+    </div>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="section">
+    <div class="section-heading">Summary</div>
+    <p class="summary-text">Product and strategy leader with deep, hands-on experience at the intersection of blockchain technology, digital assets, and customer-facing product delivery. Spent years building and managing products inside the Ethereum ecosystem, including direct involvement with SpeedRunEthereum, a live consumer product onboarding thousands of developers onto blockchain rails, and Camp BUIDL, an annually rebuilt technical training product that moves participants from curious to blockchain-capable. Brings firsthand fluency in crypto, stablecoins, tokenized payments, DeFi protocols, and developer tooling, combined with a foundational background in regulated financial services. Skilled at synthesizing digital asset trends and regulatory signals into product direction, communicating business impact to executive stakeholders, and driving adoption across complex, cross-functional environments.</p>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="section">
+    <div class="section-heading">Experience</div>
+
+    <!-- Echonomics -->
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title-co">Echonomics LLC — Principal / Fractional Executive</span>
+        <span class="job-dates">2017 – Present</span>
+      </div>
+      <div class="job-sub">Independent practice providing product leadership and strategy to leading blockchain and Web3 organizations</div>
+
+      <!-- ETHDenver -->
+      <div class="job-role">ETHDenver — Lead Technology Steward <span style="font-weight:400;color:#555;">(September 2022 – Present)</span></div>
+      <div class="job-role-sub">World's largest Web3 event, multi-million dollar annual operating budget, global blockchain and digital assets ecosystem</div>
+      <ul class="bullets">
+        <li>Managed Camp BUIDL as an annually rebuilt product, defining requirements, curriculum, staffing, and operational systems each year to move participants from zero to blockchain-ready builders, with outcomes measured against adoption and completion metrics.</li>
+        <li>Tracked and reported KPIs across program performance, participant adoption, and engagement to inform product iteration and executive communications.</li>
+        <li>Stayed continuously current on digital asset trends, regulatory developments, and ecosystem shifts, translating that intelligence into organizational strategy and product direction for one of the most influential events in blockchain.</li>
+        <li>Communicated the business impact of digital asset and blockchain initiatives to sponsors, partners, and executive leadership through clear, structured stakeholder reporting.</li>
+        <li>Built and deployed AI-powered tools and automation workflows to improve operational efficiency and support scalable product delivery.</li>
+      </ul>
+
+      <!-- Buidl Guid -->
+      <div class="job-role">Buidl Guid — Developer Relations <span style="font-weight:400;color:#555;">(June 2022 – December 2023)</span></div>
+      <div class="job-role-sub">Core team member of a 1,300+ member global Ethereum builder community, home of SpeedRunEthereum.com</div>
+      <ul class="bullets">
+        <li>Contributed to the product strategy and roadmap for SpeedRunEthereum.com, a live consumer-facing product that guides developers through progressive Ethereum challenges, driving adoption of blockchain development skills at scale across a global user base.</li>
+        <li>Managed contributor onboarding, funding workflows, and Cohort Streams, the platform's on-chain grants and contributor development product, overseeing the full participant lifecycle from application through completion and funding disbursement.</li>
+        <li>Monitored adoption and engagement metrics across the platform, synthesizing user feedback and community signals to inform product priorities and roadmap decisions.</li>
+        <li>Operated daily inside a product built on Ethereum's core development stack, developing deep fluency in the blockchain tooling, protocols, and developer experience that underpin customer-facing crypto products.</li>
+      </ul>
+
+      <!-- Gitcoin -->
+      <div class="job-role">Gitcoin / Moonshot Collective — Workstream Lead, Prototyping & Coordination Tools <span style="font-weight:400;color:#555;">(June 2021 – October 2022)</span></div>
+      <div class="job-role-sub">Executive workstream lead inside GitcoinDAO, the world's leading blockchain grants and digital asset funding platform</div>
+      <ul class="bullets">
+        <li>Led product development for on-chain coordination tools including Quadratic Diplomacy, a democratic budget distribution product, and Tip.Party, an on-chain event payment product, managing requirements, development cycles, and pilot launches.</li>
+        <li>Operated inside Gitcoin, which has distributed over $60M in crypto and stablecoin-based funding to contributors globally, developing firsthand expertise in stablecoin flows, on-chain payment mechanics, and the compliance and risk considerations of digital asset distribution.</li>
+        <li>Built business cases and funding proposals for digital asset product initiatives, securing organizational alignment and budget approval through formal governance processes.</li>
+        <li>Synthesized digital asset ecosystem trends, competitor positioning, and regulatory signals to inform product strategy and executive-level decision-making.</li>
+      </ul>
+
+      <!-- Unlock Protocol -->
+      <div class="job-role">Unlock Protocol — Business Development <span style="font-weight:400;color:#555;">(August 2020 – September 2021)</span></div>
+      <div class="job-role-sub">Decentralized platform enabling tokenized access and membership through crypto and stablecoin payment rails</div>
+      <ul class="bullets">
+        <li>Drove adoption of a tokenized digital asset product, identifying partnership opportunities and guiding integration teams through implementation requirements.</li>
+        <li>Developed and launched Headline, a consumer-facing content platform built on tokenized access rails, managing product requirements, go-to-market timelines, and partner integrations from zero to live.</li>
+      </ul>
+    </div>
+
+    <!-- C.H. Robinson -->
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title-co">C.H. Robinson — Capacity Implementation Specialist</span>
+        <span class="job-dates">February 2018 – December 2021</span>
+      </div>
+      <div class="job-sub">World's largest third-party logistics provider, 37M annual shipments, 450K carriers, 83K customers globally</div>
+      <ul class="bullets">
+        <li>Conducted data analysis across internal and third-party data sources to identify a new business vertical opportunity, built the business case, and led implementation that directly contributed to revenue growth.</li>
+        <li>Integrated disparate data systems to improve operational visibility and reporting, enabling faster and more accurate decision-making at enterprise scale.</li>
+        <li>Developed forecasts, capacity plans, and leadership-facing documentation to support strategic planning and organizational execution.</li>
+      </ul>
+    </div>
+
+    <!-- Wells Fargo -->
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title-co">Wells Fargo Advisors — Personal Banker II</span>
+        <span class="job-dates">2015 – 2017</span>
+      </div>
+      <div class="job-sub">Private wealth and financial services, large-scale regulated enterprise environment</div>
+      <ul class="bullets">
+        <li>Developed fluency in a highly regulated enterprise financial services environment, navigating compliance frameworks, institutional risk management, and client-facing financial product delivery.</li>
+        <li>Served as a cross-functional liaison across lines of business, coordinating across risk, compliance, and operations to ensure seamless client experiences.</li>
+        <li>Recognized with Affluent Trendsetter and Affluent Excellence awards for client acquisition and relationship management performance.</li>
+      </ul>
+    </div>
+
+    <!-- McAdam -->
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title-co">McAdam Financial — Financial Advisor and Team Lead</span>
+        <span class="job-dates">2013 – 2015</span>
+      </div>
+      <div class="job-sub">SEC-registered investment advisory firm (RIA)</div>
+      <ul class="bullets">
+        <li>Provided strategic analysis on emerging digital investment platforms and RoboAdvisors, leading directly to firm adoption of new technology capabilities.</li>
+        <li>Managed a book of client relationships and led a team of advisors, with accountability for revenue, client outcomes, and team performance.</li>
+      </ul>
+    </div>
+
+    <!-- Mortgage Office -->
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title-co">The Mortgage Office — Senior Loan Originator / Lead Originator</span>
+        <span class="job-dates">2010 – 2013</span>
+      </div>
+      <div class="job-sub">Full-service mortgage lending, multi-state transactions</div>
+      <ul class="bullets">
+        <li>Managed complex financial transactions from initial client requirements through closing, coordinating across borrowers, title companies, underwriters, and investors.</li>
+        <li>Supervised a team of underwriters, loan processors, and marketing staff, conducting performance evaluations and delivering training and coaching.</li>
+        <li>Promoted to Lead Originator and Investor Relationship Manager of the Northeastern Division.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="section">
+    <div class="section-heading">Education</div>
+    <div class="edu-name">The Pennsylvania State University</div>
+    <div class="edu-detail">B.S., Community, Environment and Development &nbsp;|&nbsp; Focus: Economic Sustainability &nbsp;|&nbsp; 2005 – 2010</div>
+  </div>
+
+  <!-- CORE COMPETENCIES -->
+  <div class="section">
+    <div class="section-heading">Core Competencies</div>
+    <p class="competencies">Digital Assets Product Management &middot; Blockchain and DeFi Ecosystem &middot; Crypto and Stablecoin Fluency &middot; SpeedRunEthereum and Developer Onboarding &middot; On-Chain Payments and Tokenization &middot; Product Strategy and Roadmap Development &middot; KPI Monitoring and Adoption Metrics &middot; Stakeholder and Executive Communications &middot; Cross-Functional Collaboration &middot; Risk and Compliance Awareness &middot; Financial Services and Regulated Environments &middot; AI-Powered Workflow Automation &middot; Customer-Centric Product Delivery &middot; Ecosystem Trend Analysis</p>
+  </div>
+
+</div>
+</body>
+</html>
